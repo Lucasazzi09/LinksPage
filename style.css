@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.clear{clear: both;}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    background-color: #545454;
+    text-align: center;
+}
+
+nav.title{
+    text-align: center;
+    color: #5bd57d;
+    padding: 80px 0;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+h3{
+    position: relative;
+    top: -110px;
+    color: #5bd57d;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+img{
+    position: relative;
+    top: -20px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+/*aplicar responsivo aqui*/
+.links{
+    padding: 40px;
+    background-color: #545454;
+}
+
+.links a{
+    position: relative;
+    left: 30px;
+    color: #545454;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #5bd57d;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    width: calc(100% - 60px);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+.links :hover{
+    transition: 1s;
+    color: #5bd57d;
+    border: 1px solid #5bd57d;
+    background-color: #545454;
+}
+
+.links img{
+    z-index: 2;
+    position: relative;
+    float: left;
+    left: 50px;
+    top: 70px;
+    width: 40px;
+}
+
+.certif{
+    position: relative;
+    font-size: 26px;
+    color: white;
+    font-weight: 500;
+    padding: 60px 0;
+    margin-bottom: 80px;
+}
+
+.certif b{
+    color: #5bd57d;
+}
+
+.certif img{
+    border-radius: 0;
+    position: relative;
+    top: 50px;
+    width: 500px;
+}
+
+footer.end{
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    color: white;
+    background-color: #454545;
+    font-size: 27px;
+    font-weight: 200;
+    min-height: 40px;
+}
+
+
+/*comecei o responsivo mobile*/
+@media screen and (max-width: 320px) {
+
+   .links{
+       padding: 7px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+    .certif img{
+        width: 70%;
+    }
+
+    .links img{
+        left: 10px;
+    }
+
+    .links a{
+    position: relative;
+    left: 0;
+    width:100%;
+    padding-left: 40px;
+    }
+}
+
